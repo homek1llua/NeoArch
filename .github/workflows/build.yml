@@ -11,35 +11,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    container:
+      image: archlinux:base
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build ISO in Arch Linux VM
-        uses: vmactions/vm-action@v1
-        with:
-          image: archlinux/archlinux:base
-          shell: bash
-          prepare: |
-            pacman -Sy --noconfirm --needed archiso base-devel git python python-pillow squashfs-tools xorriso dosfstools mtools
-          run: |
-            cd /build/neoarch
-            chmod +x build.sh
-            ./build.sh
-          volumes: |
-            ${{ github.workspace }}:/build
+      - name: Install dependencies
+        run: |
+          pacman -Sy --noconfirm --needed archiso base-devel git python python-pillow squashfs-tools xorriso dosfstools mtools
+
+      - name: Build ISO
+        run: |
+          chmod +x build.sh
+          ./build.sh
 
       - name: Upload ISO
         uses: actions/upload-artifact@v4
         with:
           name: neoarch-iso
-          path: neoarch/out/*.iso
+          path: out/*.iso
           retention-days: 30
 
       - name: Create Release
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: neoarch/out/*.iso
+          files: out/*.iso
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
