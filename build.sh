@@ -49,7 +49,7 @@ check_deps() {
     local missing=()
 
     for dep in "${deps[@]}"; do
-        if ! pacman -Qi "$dep" &>/dev/null; do
+        if ! pacman -Qi "$dep" &>/dev/null; then
             missing+=("$dep")
         fi
     done
