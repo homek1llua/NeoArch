@@ -1,6 +1,6 @@
 # Performance & optimization packages
-linux-zen
-linux-zen-headers
+# linux                   (in base.x86_64)
+# linux-headers            (in base.x86_64)
 # linux-firmware          (pulled as dep of linux; avoiding mirror 404)
 amd-ucode
 intel-ucode
