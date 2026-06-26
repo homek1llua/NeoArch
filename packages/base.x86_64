@@ -57,7 +57,7 @@ libtool
 libutil-linux
 licenses
 linux
-linux-firmware
+# linux-firmware         (pulled as dep of linux; avoiding mirror 404)
 linux-headers
 logrotate
 lvm2

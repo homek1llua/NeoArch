@@ -1,7 +1,7 @@
 # Performance & optimization packages
 linux-zen
 linux-zen-headers
-linux-firmware
+# linux-firmware          (pulled as dep of linux; avoiding mirror 404)
 amd-ucode
 intel-ucode
 zram-generator
