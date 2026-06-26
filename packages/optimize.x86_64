@@ -8,14 +8,14 @@ zram-generator
 earlyoom
 irqbalance
 ananicy
-ananicy-rules-git
-preload
+# ananicy-rules-git  (AUR - install manually)
+# preload            (AUR - install manually)
 profile-sync-daemon
 haveged
 cpupower
 cpufrequtils
 thermald
-auto-cpufreq
+# auto-cpufreq               (AUR - install manually)
 gamemode
 gamemode32
 mangohud
@@ -26,7 +26,7 @@ pipewire-jack
 pipewire-pulse
 wireplumber
 gst-plugin-pipewire
-noise-suppression-for-voice
+# noise-suppression-for-voice (AUR - install manually)
 realtime-privileges
 tuned
 tuned-ppd

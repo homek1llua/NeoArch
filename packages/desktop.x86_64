@@ -53,8 +53,8 @@ libreoffice-fresh
 vlc
 gimp
 inkscape
-pamac-aur
-yay
+# pamac-aur  (AUR - install manually after boot)
+# yay       (AUR - install manually after boot)
 base-devel
 git
 wget
