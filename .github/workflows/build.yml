@@ -18,7 +18,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pacman -Sy --noconfirm --needed archiso base-devel git python python-pillow squashfs-tools xorriso dosfstools mtools
+          pacman -Sy --noconfirm --needed archiso base-devel git python python-pillow squashfs-tools xorriso dosfstools mtools grub syslinux
 
       - name: Build ISO
         run: |
