@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NeoArch Linux</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DejaVu Sans', sans-serif;
+      background: #0F0520;
+      color: #D8B4FE;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      padding: 60px;
+      animation: fadeIn 0.5s ease-in;
+    }
+    .slide.active { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 { font-size: 48px; color: #E1B3FF; margin-bottom: 20px; }
+    h2 { font-size: 32px; color: #C084FC; margin-bottom: 15px; }
+    p { font-size: 18px; line-height: 1.6; max-width: 700px; margin-bottom: 20px; }
+    .icon { font-size: 64px; margin-bottom: 20px; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin-top: 20px;
+    }
+    .feature {
+      background: #1A0A2E;
+      border: 1px solid #7C3AED;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .feature h3 { color: #A855F7; margin-bottom: 8px; font-size: 16px; }
+    .feature p { font-size: 14px; color: #C084FC; }
+    .logo-text { font-size: 72px; font-weight: bold; color: #A855F7; margin-bottom: 10px; }
+    .subtitle { color: #7C3AED; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+<div class="slide active" id="slide1">
+  <div class="logo-text">NEOARCH</div>
+  <div class="subtitle">Optimized Arch Linux</div>
+  <h1>Welcome to NeoArch</h1>
+  <p>An optimized, purple-themed Arch-based distribution built for performance, gaming, and development.</p>
+  <p style="color: #7C3AED; font-size: 14px;">Your journey to a faster Linux experience starts here.</p>
+</div>
+
+<div class="slide" id="slide2">
+  <h2>Why NeoArch?</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>Performance Optimized</h3>
+      <p>Linux-zen kernel, BBR congestion control, ZRAM, early OOM, and custom sysctl settings for maximum throughput.</p>
+    </div>
+    <div class="feature">
+      <h3>Beautiful Purple Theme</h3>
+      <p>Complete KDE Plasma dark purple theme with matching SDDM, GRUB, Plymouth, and application styling.</p>
+    </div>
+    <div class="feature">
+      <h3>BTRFS with Snapshots</h3>
+      <p>Automatic BTRFS snapshots with Snapper, ZSTD compression, and TRIM support for data safety.</p>
+    </div>
+    <div class="feature">
+      <h3>Gaming Ready</h3>
+      <p>Pre-configured with gamemode, mangohud, PipeWire, and Vulkan support for an optimal gaming experience.</p>
+    </div>
+    <div class="feature">
+      <h3>Developer Friendly</h3>
+      <p>Latest toolchains, makepkg optimizations, Docker support, and all the tools you need out of the box.</p>
+    </div>
+    <div class="feature">
+      <h3>Rolling Release</h3>
+      <p>Based on Arch Linux, you get the latest software with a smooth rolling release cycle.</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide3">
+  <h2>Features</h2>
+  <p style="max-width: 600px;">
+    Linux-zen Kernel &bull; KDE Plasma &bull; BTRFS + Snapper &bull; ZRAM &bull; PipeWire<br>
+    BBR Congestion Control &bull; early OOM &bull; IRQ Balance &bull; Auto CPUFreq<br>
+    Purple Theme &bull; Calamares Installer &bull; Optimized Build Flags<br>
+    Gaming Optimizations &bull; Development Tools &bull; Rolling Updates
+  </p>
+  <p style="margin-top: 30px; color: #7C3AED;">
+    Let's get started with the installation!
+  </p>
+</div>
+
+<script>
+let currentSlide = 1;
+const totalSlides = 3;
+
+function showSlide(n) {
+  document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+  document.getElementById('slide' + n).classList.add('active');
+}
+
+setInterval(() => {
+  currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+  showSlide(currentSlide);
+}, 6000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+---
+componentName:  neoarch
+name:           NeoArch Linux
+displayName:    NeoArch Linux
+version:        2026.06
+shortDescription: |
+    A performant, purple-themed Arch-based distribution.
+description: |
+    NeoArch Linux is an optimized Arch-based distribution featuring
+    a stunning purple theme, performance enhancements, and an easy
+    graphical installer powered by Calamares.
+
+    Features:
+    - Arch Linux base with latest packages
+    - Linux-zen kernel for optimal desktop performance
+    - BTRFS filesystem with automatic snapshots
+    - KDE Plasma desktop with custom purple theming
+    - Pre-configured for gaming and development
+    - ZRAM for improved memory management
+    - GUI installer for easy setup
+
+    System Requirements:
+    - 64-bit x86_64 processor
+    - 4GB RAM (8GB recommended)
+    - 30GB storage (64GB+ recommended)
+    - UEFI or BIOS boot
+
+slideshow:    slideshow
+
+releaseDate:  2026-06-01
+
+style:
+    sidebarBackground:      "#2D1B4E"
+    sidebarText:            "#E1B3FF"
+    sidebarSelect:          "#A855F7"
+    headerBackground:       "#1A0A2E"
+    headerText:             "#C084FC"
+    bodyBackground:         "#0F0520"
+    bodyText:               "#D8B4FE"
+    hyperlink:              "#A855F7"
+    cardBackground:         "#1A0A2E"
+    cardBorder:             "#7C3AED"
+    buttonBackground:       "#7C3AED"
+    buttonText:             "#FFFFFF"
+    buttonHover:            "#9333EA"
+    inputBackground:        "#2D1B4E"
+    inputText:              "#FFFFFF"
+    inputBorder:            "#7C3AED"
+    progressBar:            "#A855F7"
+    progressBarBackground:  "#2D1B4E"
+    statusBackground:       "#1A0A2E"
+    statusText:             "#D8B4FE"
+    statusSuccess:          "#4ADE80"
+    statusWarning:          "#FBBF24"
+    statusFailed:           "#F87171"
+
+welcomeStyle:           slideshow
+welcomeExpandingLogo:   true
+
+strings:
+    productName:         NeoArch Linux
+    shortProductName:    NeoArch
+    version:             2026.06
+    versionedName:       NeoArch Linux 2026.06
+    versionedShort:      NeoArch 2026.06
+    bootloaderEntryName: NeoArch Linux

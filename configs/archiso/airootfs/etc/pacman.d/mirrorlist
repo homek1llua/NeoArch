@@ -1,0 +1,12 @@
+## NeoArch mirrorlist - auto-generated
+## Use pacman-mirrors to regenerate
+
+Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
+Server = https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://archlinux.mirrors.hoobly.com/$repo/os/$arch
+Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+Server = https://mirror.us.one.com/archlinux/$repo/os/$arch
+Server = https://mirror.pit.teraswitch.com/archlinux/$repo/os/$arch
+Server = https://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://ord.mirror.rackspace.com/archlinux/$repo/os/$arch

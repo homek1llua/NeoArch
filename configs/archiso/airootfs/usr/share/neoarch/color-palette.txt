@@ -1,0 +1,55 @@
+# NeoArch Color Palette
+# Purple theme color reference
+
+# Primary Colors
+Primary-900:  #0F0520  # Deepest purple (backgrounds)
+Primary-800:  #1A0A2E  # Dark purple (panels, cards)
+Primary-700:  #2D1B4E  # Medium dark purple (sidebar, inputs)
+Primary-600:  #4C1D95  # Rich purple (selection, accents)
+Primary-500:  #7C3AED  # Vibrant purple (primary action)
+Primary-400:  #9333EA  # Bright purple (hover, links)
+Primary-300:  #A855F7  # Light purple (highlights, progress)
+Primary-200:  #C084FC  # Very light purple (text, icons)
+Primary-100:  #E1B3FF  # Pale purple (headings, titles)
+Primary-50:   #D8B4FE  # Soft purple (body text)
+
+# Accent Colors
+Accent-Pink:      #EC4899  # Pink accent
+Accent-Blue:      #3B82F6  # Blue link accent
+Accent-Green:     #4ADE80  # Success color
+Accent-Yellow:    #FBBF24  # Warning color
+Accent-Red:       #F87171  # Error/Danger color
+Accent-Cyan:      #22D3EE  # Info accent
+
+# Neutral Colors
+Neutral-White:    #FFFFFF  # Pure white text
+Neutral-Light:    #F3F4F6  # Light text
+Neutral-Medium:   #9CA3AF  # Muted text
+Neutral-Dark:     #4B5563  # Secondary text
+Neutral-Black:    #111827  # Near black
+
+# Text Colors
+Text-Primary:     #FFFFFF  # Primary text
+Text-Secondary:   #D8B4FE  # Secondary text
+Text-Muted:       #9CA3AF  # Muted text
+Text-Accent:      #A855F7  # Accent text
+
+# Surface Colors
+Surface-Base:     #0F0520  # Base background
+Surface-Elevated: #1A0A2E  # Card/panel surface
+Surface-Overlay:  #2D1B4E  # Overlay/modal surface
+Surface-Border:   #7C3AED  # Border color
+
+# Semantic Colors
+Success:          #4ADE80  # Success
+Warning:          #FBBF24  # Warning
+Error:            #F87171  # Error
+Info:             #22D3EE  # Information
+
+# Application Examples
+# Terminal:       Primary-900 background, Primary-200 text
+# VSCode:         Cobalt2-like with purple accents
+# Firefox:        Purple dark theme
+# GRUB:           Primary-800 background, Primary-200 text, Primary-500 selected
+# Plymouth:       Primary-800 to Primary-900 gradient
+# SDDM:           Primary-900 background, Primary-200 text, Primary-500 inputs

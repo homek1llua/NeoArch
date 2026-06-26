@@ -1,0 +1,6 @@
+# NeoArch installer permissions
+%wheel ALL=(ALL:ALL) ALL
+%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/pamac
+%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/yay
+%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/pacman
+%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/calamares

@@ -1,0 +1,61 @@
+# Desktop environment
+xorg
+xorg-server
+xorg-xinit
+xorg-xrandr
+mesa
+mesa-utils
+vulkan-intel
+vulkan-radeon
+libva-intel-driver
+libva-mesa-driver
+xf86-video-intel
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-nouveau
+xf86-video-vesa
+
+# KDE Plasma (optimized for performance)
+plasma-meta
+plasma-wayland-session
+kde-applications-meta
+kde-gtk-config
+sddm
+sddm-kcm
+dolphin
+kate
+konsole
+kwrite
+gwenview
+spectacle
+okular
+ark
+filelight
+kcalc
+kdenlive
+krita
+
+# GPU acceleration
+libva
+libva-utils
+vdpauinfo
+libvdpau
+
+# Display manager
+sddm
+sddm-kcm
+
+# Additional tools
+firefox
+firefox-i18n-en-us
+thunderbird
+libreoffice-fresh
+vlc
+gimp
+inkscape
+pamac-aur
+yay
+base-devel
+git
+wget
+curl

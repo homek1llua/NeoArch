@@ -1,0 +1,45 @@
+// NeoArch Plymouth Script
+
+Bg.SetBackgroundTopColor(0.10, 0.04, 0.18);
+Bg.SetBackgroundBottomColor(0.15, 0.06, 0.25);
+
+logo = Image("logo.png");
+logo.SetPosition(Window.GetWidth() / 2 - logo.GetWidth() / 2,
+                 Window.GetHeight() / 2 - logo.GetHeight() / 2 - 40);
+logo.SetOpacity(0.9);
+
+sprite = Sprite();
+sprite.SetImage(logo);
+
+message = Text("NeoArch Linux");
+message.SetColor(0.75, 0.50, 0.98);
+message.SetFontName("DejaVu Sans Bold");
+message.SetFontSize(22);
+message.SetPosition(Window.GetWidth() / 2 - message.GetWidth() / 2,
+                    Window.GetHeight() / 2 + 20);
+
+spinner = Sprite();
+progress = 0;
+
+fun animation_callback (timer_handle, time) {
+    progress = progress + 0.02;
+    if (progress > 1.0) {
+        progress = 0.0;
+    }
+
+    // Rotating spinner effect
+    x = Window.GetWidth() / 2 + Math.Cos(progress * 360 * Math.DegToRad) * 30;
+    y = Window.GetHeight() / 2 + Math.Sin(progress * 360 * Math.DegToRad) * 30;
+
+    spinner.SetPosition(x - 8, y - 8);
+    spinner.SetOpacity(0.7);
+
+    return true;
+}
+
+// Create dot for spinner
+dot = Image.dot(16, 16, 0.65, 0.35, 0.95, 1.0);
+spinner.SetImage(dot);
+
+// Start animation
+SetTimeout(animation_callback, 0.03);
