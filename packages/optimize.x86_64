@@ -7,19 +7,19 @@ intel-ucode
 zram-generator
 earlyoom
 irqbalance
-ananicy
-# ananicy-rules-git  (AUR - install manually)
+# ananicy                (AUR - install manually)
+# ananicy-rules-git      (AUR - install manually)
 # preload            (AUR - install manually)
 profile-sync-daemon
 haveged
 cpupower
-cpufrequtils
+# cpufrequtils            (removed from repos, use cpupower)
 thermald
 # auto-cpufreq               (AUR - install manually)
 gamemode
-gamemode32
+# gamemode32              (not in repos, maybe lib32-gamemode)
 mangohud
-libstrangle
+# libstrangle              (AUR - install manually)
 pipewire
 pipewire-alsa
 pipewire-jack

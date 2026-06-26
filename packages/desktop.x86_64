@@ -17,7 +17,7 @@ xf86-video-vesa
 
 # KDE Plasma (optimized for performance)
 plasma-meta
-plasma-wayland-session
+# plasma-wayland-session  (included in plasma-meta since KDE 6)
 kde-applications-meta
 kde-gtk-config
 sddm

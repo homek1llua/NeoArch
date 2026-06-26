@@ -75,8 +75,7 @@ prepare() {
     cat "$SCRIPT_DIR/packages/base.x86_64" "$SCRIPT_DIR/packages/desktop.x86_64" \
         "$SCRIPT_DIR/packages/optimize.x86_64" > "$WORK_DIR/packages.x86_64"
 
-    # Ensure calamares and its dependencies are in the package list
-    echo "calamares" >> "$WORK_DIR/packages.x86_64"
+    # Ensure calamares dependencies are in the package list
     echo "yaml-cpp" >> "$WORK_DIR/packages.x86_64"
 
     # Copy Calamares config

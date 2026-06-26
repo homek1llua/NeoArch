@@ -29,7 +29,6 @@ file
 filesystem
 findutils
 flex
-fmtutils
 fuse2
 fuse3
 fuseiso
@@ -47,13 +46,11 @@ syslinux
 hdparm
 htop
 inetutils
-initramfs
 intel-ucode
 iproute2
 iputils
 iwd
 jfsutils
-killproc
 less
 libnewt
 libtool
@@ -104,7 +101,6 @@ psmisc
 python
 python-requests
 python-pip
-reiserfsprogs
 rsync
 rxvt-unicode
 s-nail
@@ -123,7 +119,6 @@ tcpdump
 texinfo
 thin-provisioning-tools
 time
-tmpfiles
 traceroute
 tree
 tzdata
