@@ -77,7 +77,6 @@ prepare() {
 
     # Ensure calamares and its dependencies are in the package list
     echo "calamares" >> "$WORK_DIR/packages.x86_64"
-    echo "calamares-config-neoarch" >> "$WORK_DIR/packages.x86_64"
     echo "yaml-cpp" >> "$WORK_DIR/packages.x86_64"
 
     # Copy Calamares config

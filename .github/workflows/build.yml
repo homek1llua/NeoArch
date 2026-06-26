@@ -21,6 +21,11 @@ jobs:
         run: |
           pacman -Sy --noconfirm --needed archiso base-devel git python python-pillow squashfs-tools xorriso dosfstools mtools grub syslinux
 
+      - name: Configure DNS
+        run: |
+          echo "nameserver 8.8.8.8" > /etc/resolv.conf
+          echo "nameserver 1.1.1.1" >> /etc/resolv.conf
+
       - name: Build ISO
         run: |
           chmod +x build.sh
