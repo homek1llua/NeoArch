@@ -160,9 +160,9 @@ for _ in range(200):
         fill=(brightness, brightness, brightness, 200)
     )
 
-# Save with optimization
-img.save(output, 'PNG', optimize=True)
-print(f'Generated: {output} ({w}x{h})')
+    # Save with optimization
+    img.save('$output', 'PNG', optimize=True)
+    print(f'Generated: $output ({w}x{h})')
 "
 }
 
