@@ -43,6 +43,7 @@ glibc
 grep
 grub
 gzip
+syslinux
 hdparm
 htop
 inetutils
