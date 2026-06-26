@@ -22,15 +22,13 @@ ISO_NAME="neoarch-$(date +%Y.%m.%d)-x86_64.iso"
 
 cleanup() {
     echo -e "\n${YELLOW}[!] Cleaning up...${NC}"
-    if mountpoint -q "$WORK_DIR/airootfs" 2>/dev/null; then
-        umount -R "$WORK_DIR/airootfs" 2>/dev/null || true
-    fi
+    mountpoint -q "$WORK_DIR/airootfs" 2>/dev/null && umount -R "$WORK_DIR/airootfs" 2>/dev/null || true
 }
 
 trap cleanup EXIT INT TERM
 
 banner() {
-    clear
+    clear 2>/dev/null || true
     echo -e "${PURPLE}"
     echo '██╗  ██╗███████╗ ██████╗  █████╗ ██████╗  ██████╗██╗  ██╗'
     echo '██║  ██║██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔════╝██║  ██║'
